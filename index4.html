@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Expense Tracker</title>
+  <link rel="stylesheet" href="style4.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Smart Expense Tracker</h2>
+    <div class="balance">
+      Balance: ₹<span id="balance">0.00</span>
+    </div>
+
+    <div class="income-expense">
+      <div class="income">
+        Income <br />
+        ₹<span id="income">0.00</span>
+      </div>
+      <div class="expense">
+        Expense <br />
+        ₹<span id="expense">0.00</span>
+      </div>
+    </div>
+
+    <ul id="transaction-list"></ul>
+
+    <form id="transaction-form">
+      <input type="text" id="text" placeholder="Enter description" required />
+      <input type="number" id="amount" placeholder="Enter amount (use - for expense)" required />
+      <button type="submit">Add Transaction</button>
+    </form>
+  </div>
+
+  <script src="script4.js"></script>
+</body>
+</html>
+
